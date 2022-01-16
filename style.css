@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=DM+Serif+Display&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=DM+Serif+Display&family=Limelight&family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style-type: none;
+}
+body{
+    background: #bfbfbf url(./assets/background.jpg)repeat-x;
+    font-family: Arial, sans-serif;
+}
+header{
+    padding: 1rem 0;
+}
+header h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Limelight', 'cursive';
+    text-shadow: 0.2rem 0.2rem 0.2rem #000;
+}
+
+/************** main-menu *************/
+#main-menu ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50rem;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 9.3rem;
+}
+#main-menu ul li{
+    float: left;
+    width: 8.75rem;
+    height: 31rem;
+    overflow: hidden;
+    position: relative;
+}
+.bw{
+    position: absolute;
+    width: 8.75rem;
+    left: 0rem;
+    height: 31rem;
+    cursor: pointer;
+    opacity: 0.7;
+    background: url(./assets/bw-image.jpg) no-repeat;
+}
+.color{
+    position: absolute;
+    left: 8.75rem;
+    width: 8.75rem;
+    height: 31rem;
+    cursor: pointer;
+    background: url(./assets/color-image.jpg) no-repeat;
+}
+#part2 div{
+    background-position: -8.75rem 0rem;
+}
+#part3 div{
+    background-position: -17.5rem 0rem;
+}
+#part4 div{
+    background-position: -26.25rem 0rem;
+}
+#part5 div{
+    background-position: -35rem 0rem;
+}
+.description{
+    position: absolute;
+    left: 14rem;
+    width: 17rem;
+    height: 27rem;
+    padding: 2rem;
+    background: #fff;
+}
+.description h2{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Limelight', 'cursive';
+    text-transform: uppercase;
+    color: #333;
+}
+.description h3{
+     margin-top: 2rem;
+     padding: 1rem;
+    text-align: center;
+    font-family: 'Lobster', 'cursive';
+    font-size: 1.5rem;
+    background: #d70000;
+    color: #fff;
+    text-shadow: 0.1rem 0.1rem 0.1rem #000;
+    border-radius: 0.5rem;
+}
+.description p{
+    text-align: center;
+    font-family: 'Lobster', 'cursive';
+    padding-top: 2.5rem;
+    font-size: 1.2rem;
+    color: #000;
+}
+/*************** buttons-menu ****************/
+#buttons-menu{
+    float: left;
+    width: 100%;
+    padding: 5rem 0rem 5rem 0rem;
+}
+#buttons-menu ul{
+    float: left;
+    position: relative;
+    left: 50%;
+    text-align: center;
+}
+.button{
+    position:relative;
+    float: left;
+    width: 15rem;
+    margin-left: 3rem;
+    padding: 1rem 0rem;
+    right: 50%;
+    text-align: center;
+    font-family: 'Lobster' 'cursive';
+    text-shadow: 0.1rem 0.1rem 0.1rem #000;
+    color: #fff;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(0,0,0,0.75);
+    background: #333;
+    border: 0.2rem solid #b70000;
+    font-size: 1.8rem;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: .3s ease;
+    border-radius: 1rem;
+}
+.hovered{
+    background: #b70000;
+    border:0.2rem solid #333;
+    font-size: 2rem;
+}
