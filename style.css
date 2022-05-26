@@ -8,7 +8,7 @@ ul,ol{
     list-style-type: none;
 }
 body{
-    background: #bfbfbf url(./assets/background.jpg)repeat-x;
+    background: #bfbfbf url(./assets/background.jpg) repeat-x;
     font-family: Arial, sans-serif;
 }
 header{
@@ -22,9 +22,13 @@ header h1{
     font-family: 'Limelight', 'cursive';
     text-shadow: 0.2rem 0.2rem 0.2rem #000;
 }
-
 /************** main-menu *************/
+#main-menu{
+    width: 100%;
+    height: 50rem;
+}
 #main-menu ul{
+    position: absolute;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -47,7 +51,7 @@ header h1{
     height: 31rem;
     cursor: pointer;
     opacity: 0.7;
-    background: url(./assets/bw-image.jpg) no-repeat;
+    background: url(./assets/bw_image.jpg) no-repeat;
 }
 .color{
     position: absolute;
@@ -55,7 +59,7 @@ header h1{
     width: 8.75rem;
     height: 31rem;
     cursor: pointer;
-    background: url(./assets/color-image.jpg) no-repeat;
+    background: url(./assets/color_image.jpg) no-repeat;
 }
 #part2 div{
     background-position: -8.75rem 0rem;
@@ -105,25 +109,23 @@ header h1{
 }
 /*************** buttons-menu ****************/
 #buttons-menu{
-    float: left;
+    position: relative;
     width: 100%;
     padding: 5rem 0rem 5rem 0rem;
+    top: 80%;
 }
 #buttons-menu ul{
-    float: left;
-    position: relative;
-    left: 50%;
-    text-align: center;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 .button{
     position:relative;
-    float: left;
     width: 15rem;
-    margin-left: 3rem;
     padding: 1rem 0rem;
-    right: 50%;
     text-align: center;
-    font-family: 'Lobster' 'cursive';
+    font-family: 'Lobster', 'cursive';
     text-shadow: 0.1rem 0.1rem 0.1rem #000;
     color: #fff;
     box-shadow: 0.4rem 0.4rem 0.4rem rgba(0,0,0,0.75);
